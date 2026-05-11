@@ -2,12 +2,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Card from "./components/Card";
 import "./App.css";
-
-
-
-
-
-
 function App() {
   const API = "https://lanciweb.github.io/demo/api/actresses/";
   const [actors, setActors] = useState([])
@@ -20,8 +14,6 @@ function App() {
       }
       )
       .catch(error => console.error("Error fatching data", error));
-
-
   }, [])
 
   return (
